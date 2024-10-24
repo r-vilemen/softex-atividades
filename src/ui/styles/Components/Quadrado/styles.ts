@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-interface QuadradoProps {
-  cor: string;
-  tamanho: number;
+interface QuadradoEstilizadoProps {
+  $cor?: string;
+  $tamanho?: string;
 }
 
-export const DivQuadrado = styled.div<QuadradoProps>`
-  width: ${(props) => props.tamanho}px;
-  height: ${(props) => props.tamanho}px;
-  background-color: ${(props) => props.cor};
+export const QuadradoEstilizado = styled.div<QuadradoEstilizadoProps>`
+  background-color: ${({ $cor }) => $cor || "gray"};
+  width: ${({ $tamanho }) => $tamanho || "100px"};
+  height: ${({ $tamanho }) => $tamanho || "100px"};
 `;

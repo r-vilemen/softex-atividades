@@ -1,13 +1,13 @@
-import { DivQuadrado } from "@/ui/styles/Components/Quadrado/styles";
 import React from "react";
+import { QuadradoEstilizado } from "@/ui/styles/Components/Quadrado/styles";
 
 interface QuadradoProps {
-  cor: string;
-  tamanho: number;
+  cor?: string;
+  tamanho?: string;
 }
 
 const Quadrado: React.FC<QuadradoProps> = ({ cor, tamanho }) => {
-  return <DivQuadrado cor={cor} tamanho={tamanho} />;
+  return <QuadradoEstilizado $cor={cor} $tamanho={tamanho} />;
 };
 
 export default Quadrado;
