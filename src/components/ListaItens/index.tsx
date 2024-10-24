@@ -1,8 +1,8 @@
-import {
-  EstiloItem,
-  EstiloLista,
-} from "@/ui/styles/Components/ListaItens/styles";
 import React from "react";
+import {
+  ListaEstilizada,
+  ItemEstilizado,
+} from "@/ui/styles/Components/ListaItens/styles";
 
 interface ListaItensProps {
   itens: string[];
@@ -10,11 +10,11 @@ interface ListaItensProps {
 
 const ListaItens: React.FC<ListaItensProps> = ({ itens }) => {
   return (
-    <EstiloLista>
+    <ListaEstilizada>
       {itens.map((item, index) => (
-        <EstiloItem key={index}>{item}</EstiloItem>
+        <ItemEstilizado key={index}>{item}</ItemEstilizado>
       ))}
-    </EstiloLista>
+    </ListaEstilizada>
   );
 };
 
