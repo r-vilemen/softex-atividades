@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const CabecalhoEstilizado = styled.header`
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: #282c34;
   text-align: center;
+  color: white;
 `;
 
 export const TituloCabecalho = styled.h1`
@@ -13,5 +14,4 @@ export const TituloCabecalho = styled.h1`
 
 export const DescricaoCabecalho = styled.p`
   font-size: 1rem;
-  color: #777;
 `;
