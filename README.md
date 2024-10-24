@@ -14,7 +14,7 @@ Este projeto é uma atividade de componentes da Softex.
 
 1. Clone o repositório:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone <https://github.com/r-vilemen/softex-atividades.git>
    ```
 2. Instale as dependências:
    ```bash
