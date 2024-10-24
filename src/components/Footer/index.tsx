@@ -1,6 +1,19 @@
-import { Container } from "@/ui/styles/Components/Footer/styles";
+import {
+  EstiloRodape,
+  TextoRodape,
+} from "@/ui/styles/Components/Footer/styles";
 import React from "react";
 
-export function Footer() {
-  return <Container>Footer</Container>;
+interface RodapeProps {
+  informacoes: string;
 }
+
+const Rodape: React.FC<RodapeProps> = ({ informacoes }) => {
+  return (
+    <EstiloRodape>
+      <TextoRodape>{informacoes}</TextoRodape>
+    </EstiloRodape>
+  );
+};
+
+export default Rodape;
