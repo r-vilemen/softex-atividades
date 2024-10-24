@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const EstiloTitulo = styled.h1`
-  font-size: 2.5rem;
-  font-weight: bold;
+export const TituloEstilizado = styled.h1`
+  font-size: 2rem;
   color: #333;
 `;

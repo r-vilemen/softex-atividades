@@ -1,12 +1,12 @@
-import { EstiloTitulo } from "@/ui/styles/Components/Titulo/styles";
 import React from "react";
+import { TituloEstilizado } from "@/ui/styles/Components/Titulo/styles";
 
 interface TituloProps {
   texto: string;
 }
 
 const Titulo: React.FC<TituloProps> = ({ texto }) => {
-  return <EstiloTitulo>{texto}</EstiloTitulo>;
+  return <TituloEstilizado>{texto}</TituloEstilizado>;
 };
 
 export default Titulo;
