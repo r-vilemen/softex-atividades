@@ -1,15 +1,20 @@
 import styled from "styled-components";
 
-export const EstiloBotao = styled.button`
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #0070f3;
+interface BotaoEstilizadoProps {
+  $cor?: string;
+  $tamanho?: string;
+}
+
+export const BotaoEstilizado = styled.button<BotaoEstilizadoProps>`
+  background-color: ${({ $cor }) => $cor || "blue"};
+  font-size: ${({ $tamanho }) => $tamanho || "16px"};
   color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 
   &:hover {
-    background-color: #005bb5;
+    opacity: 0.8;
   }
 `;
