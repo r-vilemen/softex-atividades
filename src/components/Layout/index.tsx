@@ -1,13 +1,16 @@
 import React from "react";
-import { Footer } from "../Footer";
-import { Header } from "../Header";
+import Rodape from "../Footer";
+import Cabecalho from "../Header";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <Header />
+      <Cabecalho
+        titulo="Atividade da Softex"
+        descricao="Este é um exemplo de cabeçalho com um título e uma descrição personalizáveis."
+      />
       <main>{children}</main>
-      <Footer />
+      <Rodape informacoes="© 2024 Atividade Softex. Todos os direitos reservados." />
     </>
   );
 };
